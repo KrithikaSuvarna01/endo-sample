@@ -1,7 +1,7 @@
 
 
 
-export const LoginPage = ({children,title,subtitle,image,text1,text2}:{children:React.ReactNode,title?:string,subtitle?:string,image?:string,text1?:string,text2?:string}) => {
+export const LoginPage = ({children,title,subtitle,image}:{children:React.ReactNode,title?:string,subtitle?:string,image?:string}) => {
   
   return (
     <div className="bg-custom-gradient w-full h-full relative">
@@ -14,7 +14,7 @@ export const LoginPage = ({children,title,subtitle,image,text1,text2}:{children:
         <div className=" bg-login-bg   absolute w-[56.72vw] right-[1.62%] top-[3.21%] bottom-[3.21%]  rounded-3xl flex justify-center items-center ">
           <div className=" px-[3.75rem] py-[4.0625rem]  flex justify-center items-center relative ">
 
-            <div className="  shadow-[rgba(13,_38,_76,_0.10)_0px_9px_20px]  bg-login-bg  min-w-[27vw] !z-50 bg-login px-8 py-14 rounded-2xl gap-[2.625rem] flex flex-col ">
+            <div className="  shadow-[rgba(13,_38,_76,_0.10)_0px_9px_20px]  bg-login-bg border-2 border-red-900 min-w-[30vw] !z-50 bg-login px-8 py-14 rounded-2xl gap-[2.625rem] flex flex-col ">
               <div className=" max-w-[24.125rem] flex flex-col justify-start gap-[0.375rem]">
                 <h1 className=" text-2xl font-medium text-[#4B465C]">{title}</h1>
                 <h2 className="font-normal text-[0.9375rem] leading-[1.375rem]">{subtitle}</h2>
@@ -44,8 +44,8 @@ export const LoginPage = ({children,title,subtitle,image,text1,text2}:{children:
         </div>
         <div className=" absolute top-[22.58vh] left-[4.14vw]   flex flex-col items-center gap-[0.0625rem]">
 <img src={image} className=" w-[28vw] h-[50vh]" />
-<h3 className=" max-w-[26.5rem] font-[500] text-[#4B465C] text-2xl flex flex-col items-center">{text1}
-          <span>{text2}</span></h3>
+<h3 className=" max-w-[26.5rem] font-[500] text-[#4B465C] text-2xl flex flex-col items-center">Enter your details to Sign in
+<span>to your account</span></h3>
         </div>
       </div>
    
